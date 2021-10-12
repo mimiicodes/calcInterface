@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Simple Calc</title>
+</head>
+<body>
+    <div class="wrap">
+        <form name="calc" id="calc">
+        <h3 id="name">CAMIO</h3>
+        <input type="text" name="output" id="output"><br>
+        <div class="keyboard">
+            <div class="rows">
+                <input type="button" value="7" onclick="num7()">
+                <input type="button" value="8" onclick="num8()">
+                <input type="button" value="9" onclick="num9()">
+                <input type="button" value="+" onclick="add()">
+            </div>
+            <div class="rows">
+                <input type="button" value="4" onclick="num4()">
+                <input type="button" value="5" onclick="num5()">
+                <input type="button" value="6" onclick="num6()">
+                <input type="button" value="-" onclick="minus()">
+            </div>
+            <div class="rows">
+                <input type="button" value="1" onclick="num1()">
+                <input type="button" value="2" onclick="num2()">
+                <input type="button" value="3" onclick="num3()">
+                <input type="button" value="*" onclick="times()">
+            </div>
+            <div class="rows">
+                <input type="button" value="00" onclick="num00()">
+                <input type="button" value="0" onclick="num0()">
+                <input type="button" value="&#247;" onclick="divide()">
+                <input type="button" value="=" onclick="equals()">
+            </div>
+            <div class="rows">
+                <input type="button" value="&nbsp;" id="empty">
+                <input type="button" value="&nbsp;" id="empty">
+                <input type="button" value="&leftarrow;" onclick="backspace()">
+                <input type="button" value="AC" onclick="AC()" id="del">
+            </div>
+        </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
